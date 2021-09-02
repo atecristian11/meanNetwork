@@ -1,0 +1,40 @@
+<div class="bgComponent">
+  <div class="form">
+    <mat-card class="card">
+      <mat-card-title>Create Post</mat-card-title>
+      <!-- para agregarle el titulo a la card -->
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <!-- item de un formulario -->
+            <input
+              [(ngModel)]="registerData.text"
+              matInput
+              placeholder="Text"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <!-- item de un formulario -->
+            <input
+              [(ngModel)]="registerData.status"
+              matInput
+              placeholder="Status"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          (click)="savePost()"
+          class="button colorButton"
+          mat-raised-button
+        >
+          Create post
+        </button>
+        <br /><br />
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

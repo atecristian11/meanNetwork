@@ -1,0 +1,8 @@
+.bgFooter {
+    background-color: #000000;
+    color: #87e783;
+    position: fixed; /*para que la el footer siempre este al final de la pagina asi bajen en la misma y que se vea solo cuando bajemos haste el con el fixed siempre se ve el footer y con el absolute se sobrepone a la imagen que se tiene*/
+    width: 100%;
+    bottom: 0;
+  }
+  

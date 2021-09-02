@@ -1,0 +1,31 @@
+<div class="bgComponent">
+  <div class="accordion_display">
+    <div class="accordion_size">
+      <mat-accordion multi="true" *ngIf="postData.length">
+        <mat-expansion-panel *ngFor="let post of postData" hideToggle="false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="tes">{{ post.text }}</span>
+              <span class="spacer"></span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-panel-description class="sta">
+            {{ post.status }}
+          </mat-panel-description>
+          <mat-action-row>
+            <!-- <button 
+            mat-button
+            class="btn1"
+          >
+            Update
+          </button> -->
+            <span class="spacer"></span>
+            <mat-icon class="elimi" (click)="deletePost(post)"
+              >delete</mat-icon
+            >
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
